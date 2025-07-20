@@ -1,0 +1,448 @@
+{
+    "__type__": "Deck",
+    "children": [
+        {
+            "__type__": "Deck",
+            "children": [],
+            "crowdanki_uuid": "269e0b9a-65a7-11f0-9d2d-2cf05d74b1f3",
+            "deck_config_uuid": "2693157b-65a7-11f0-9870-2cf05d74b1f3",
+            "desc": "",
+            "dyn": 0,
+            "extendNew": 0,
+            "extendRev": 0,
+            "media_files": [],
+            "name": "Chapters",
+            "newLimit": null,
+            "newLimitToday": null,
+            "notes": [],
+            "reviewLimit": null,
+            "reviewLimitToday": null
+        }
+    ],
+    "crowdanki_uuid": "7b60bb6b-65a9-11f0-bfc7-2cf05d74b1f3",
+    "deck_config_uuid": "2693157b-65a7-11f0-9870-2cf05d74b1f3",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "answerAction": 0,
+            "autoplay": true,
+            "buryInterdayLearning": false,
+            "crowdanki_uuid": "2693157b-65a7-11f0-9870-2cf05d74b1f3",
+            "desiredRetention": 0.9,
+            "dyn": false,
+            "easyDaysPercentages": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "fsrsParams5": [],
+            "fsrsWeights": [],
+            "ignoreRevlogsBeforeDate": "",
+            "interdayLearningMix": 0,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 1,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20
+            },
+            "newGatherPriority": 0,
+            "newMix": 0,
+            "newPerDayMinimum": 0,
+            "newSortOrder": 0,
+            "questionAction": 0,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "perDay": 200
+            },
+            "reviewOrder": 0,
+            "secondsToShowAnswer": 0.0,
+            "secondsToShowQuestion": 0.0,
+            "sm2Retention": 0.9,
+            "stopTimerOnAnswer": false,
+            "timer": 0,
+            "waitForAudio": true,
+            "weightSearch": ""
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [
+        "paste-07d208c7b6cb054dcc4759ae357de1b53be594f7.jpg",
+        "paste-da0452d964866a07cb34f37ca7574279216a426a.jpg"
+    ],
+    "name": "Compiler Design",
+    "newLimit": null,
+    "newLimitToday": null,
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "css": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n",
+            "flds": [
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": 4011255275627962864,
+                    "name": "Front",
+                    "ord": 0,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                },
+                {
+                    "collapsed": false,
+                    "description": "",
+                    "excludeFromSearch": false,
+                    "font": "Arial",
+                    "id": -6208914048281191020,
+                    "name": "Back",
+                    "ord": 1,
+                    "plainText": false,
+                    "preventDeletion": false,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false,
+                    "tag": null
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic",
+            "originalStockKind": 1,
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "id": 2953996692468982584,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                }
+            ],
+            "type": 0
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Name each phase of the Compiler W<br><img src=\"paste-07d208c7b6cb054dcc4759ae357de1b53be594f7.jpg\">",
+                "<img src=\"paste-da0452d964866a07cb34f37ca7574279216a426a.jpg\">"
+            ],
+            "guid": "NE8zC8kDHN",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is instruction selection in compiler design?",
+                "Instruction selection is the compiler phase that transforms intermediate code (IR) into abstract assembly instructions, bridging the gap between high-level language constructs and machine code."
+            ],
+            "guid": "bkopx-ihW0",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are IR trees in compiler design?",
+                "IR Trees are a structured intermediate representation of programs using trees for expressions. Each node represents an operation or operand."
+            ],
+            "guid": "O/h.MQX%TB",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What kind of statements and expressions can IR trees contain?",
+                "Assignments and return statements; expressions can include constants, temps (variables), and binary operations like <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>."
+            ],
+            "guid": "D,33}129DU",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the maximal munch algorithm?",
+                "A top-down instruction selection approach that always tries to match the largest possible subtree pattern first, generating efficient code by greedily choosing the most specific match."
+            ],
+            "guid": "i~.K->DkpK",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In maximal munch, why is pattern order important?",
+                "To prioritize more efficient instruction patterns (like using a shift for multiplication by 2) before falling back to general ones (like generic multiplication)."
+            ],
+            "guid": "yLjhDqXA*S",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What does&nbsp;ˇe and&nbsp;ˆe mean in code generation",
+                "ˇe denotes the instruction sequence implementing expression <code>e</code>.<br><div>ˆe denotes the operand (e.g., a temp) that holds the result of evaluating expression <code>e</code>.</div>"
+            ],
+            "guid": "A,-CyeO.@6",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is strength reduction in instruction selection?",
+                "An optimization that replaces expensive operations with cheaper ones, e.g., using a shift instead of multiplication by 2."
+            ],
+            "guid": "d1rIm/t}t?",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Give an example of strength reduction used in instruction selection.",
+                "Replace <code>e * 2</code> with <code>t ← e &lt;&lt; 1</code>."
+            ],
+            "guid": "pYTCH7BUZo",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Given the source: <code>z = (x + 3) * (y - 5); return z</code>, what abstract assembly is generated?",
+                "t1 ← x + 3&nbsp; <br>t2 ← y − 5&nbsp; <br>z ← t1 * t2&nbsp; <br>rret ← z"
+            ],
+            "guid": "w-B5o78g+X",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is constant propagation in instruction selection?",
+                "Replacing uses of a temp assigned to a constant (<code>t ← 5</code>) with the constant directly, unless <code>t</code> is reassigned later."
+            ],
+            "guid": "LST6Q8}UXV",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection",
+                "optimizations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is copy propagation in instruction selection?",
+                "Replacing uses of a temp (<code>t ← x</code>) with the original variable <code>x</code>, unless either <code>t</code> or <code>x</code> is reassigned."
+            ],
+            "guid": "p9cc<@^Szf",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection",
+                "optimizations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "When is copy propagation unsafe?",
+                "<div>When the original variable (<code>x</code>) is reassigned before the temp is used.</div>"
+            ],
+            "guid": "CF}8)*Y;;S",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection",
+                "optimizations"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is Static Single Assignment (SSA) form?",
+                "A representation where each variable (temp) is assigned exactly once, often by appending a version number (e.g., <code>t0</code>, <code>t1</code>)."
+            ],
+            "guid": "BcWd1m`_ew",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does SSA simplify optimization?",
+                "Each temp has one assignment, so you can safely replace its uses with its assigned value without tracking reassignments."
+            ],
+            "guid": "um~;`{VEyn",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Convert this code to SSA:<br>t ← 5&nbsp; <br>x ← t - 4&nbsp; <br>t ← t + x&nbsp; <br>z ← t - 1",
+                "t0 ← 5&nbsp; <br>x0 ← t0 - 4&nbsp; <br>t1 ← t0 + x0&nbsp; <br>z0 ← t1 - 1"
+            ],
+            "guid": "N<EkCcB#YY",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How are 3-address instructions emulated on x86-64 (which has 2-address instructions)?",
+                "Split the 3-address operation into a move followed by a 2-address operation.<br>\nExample:<br>d ← s1 + s2 becomes:&nbsp; <br>d ← s1&nbsp; <br>d ← d + s2"
+            ],
+            "guid": "GNC+GAh[u+",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How is integer division implemented on x86-64?",
+                "MOVL s1, %eax&nbsp; <br>CLTD&nbsp; <br>IDIVL s2&nbsp; <br>MOVL %eax, d"
+            ],
+            "guid": "pdKsc,>(c4",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Why is the <code>CLTD</code> instruction needed before <code>IDIVL</code>?",
+                "It sign-extends %eax into %edx to prepare for 64-bit division (dividend is [%edx,%eax])."
+            ],
+            "guid": "M#6%LW.HS5",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How can you implement the data structures for an intermediate representation as defined in this lecture?",
+                "Use class hierarchies to represent IR nodes like constants, variables, and binary operations. These form expression trees that can be traversed for instruction selection."
+            ],
+            "guid": "bjp$d9PQa?",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection",
+                "quiz"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the advantages and disadvantages of a 3-address intermediate representation?",
+                "<div><strong>Advantages:</strong></div>\n<ul>\n<li>\n<div>Cleaner separation of operands and result</div>\n</li>\n<li>\n<div>Easier for optimizations</div>\n</li></ul><strong>Disadvantages:</strong><br><ul>\n<li>\n<div>Requires more temporaries and registers</div></li></ul>"
+            ],
+            "guid": "ue.v!3M`C6",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection",
+                "quiz"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are the advantages /&nbsp;disadvantages of using <b>macro expansion</b> for instruction selection?",
+                "<div><strong>Advantages:</strong></div>\n<ul>\n<li>\n<div>Simplicity and modularity — each IR construct maps to a fixed instruction sequence.</div></li></ul><b>Disadvantages:</b><br><ul><li>Inefficient code due to lack of context-aware optimizations; leads to redundant instructions and missed optimizations.</li></ul>"
+            ],
+            "guid": "zim(`-2h{C",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "instruction_selection",
+                "quiz"
+            ]
+        }
+    ],
+    "reviewLimit": null,
+    "reviewLimitToday": null
+}
