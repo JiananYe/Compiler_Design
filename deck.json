@@ -441,6 +441,210 @@
                 "instruction_selection",
                 "quiz"
             ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is register allocation in compilers?",
+                "Mapping unbounded temps in pseudo-assembly to a limited number of CPU registers."
+            ],
+            "guid": "Nl)#&1[,Ad",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Why not spill all variables to memory like in JVM?",
+                "Memory access is slower than registers, degrading performance."
+            ],
+            "guid": "dc,A,Q,3R(",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "When are two variables said to interfere?",
+                "When their live ranges overlap—they must be assigned different registers."
+            ],
+            "guid": "wyp-lHQx[Y",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What does a node represent in the interference graph?",
+                "A variable (or register)."
+            ],
+            "guid": "tCbPR`lA:;",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How is liveness determined in a straight-line program?",
+                "By traversing backward and marking used variables until redefined."
+            ],
+            "guid": "N~:V[;w0%*",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the register allocation problem reduced to in Graph Coloring?",
+                "K-coloring of the interference graph where adjacent nodes have different colors."
+            ],
+            "guid": "GDfd)4N@B&",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What happens if the graph isn’t K-colorable?",
+                "Spilling is needed—some variables are stored in memory."
+            ],
+            "guid": "Q6hSpQ[Zg~",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What defines a chordal graph?",
+                "Every cycle of 4+ nodes has a chord—an edge between non-consecutive nodes in the cycle."
+            ],
+            "guid": "M;J]_y*&>o",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Why are chordal graphs important in register allocation?",
+                "They allow efficient optimal coloring using simplicial elimination ordering."
+            ],
+            "guid": "E9|Re<K1gp",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a simplicial node?",
+                "A node whose neighbors form a clique."
+            ],
+            "guid": "w5jN7[VC}p",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What algorithm finds Simplicial Elimination Ordering efficiently?",
+                "Maximum Cardinality Search (MCS), in O(|V| + |E|) time."
+            ],
+            "guid": "G$E!4^9.z&",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does greedy coloring work?",
+                "Colors nodes in order, assigning the lowest available color not used by neighbors."
+            ],
+            "guid": "H:OG8m6X&~",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the maximum number of colors greedy coloring will use?",
+                "Δ(G) + 1, where Δ(G) is the maximum degree in the graph."
+            ],
+            "guid": "cw+0(^j(3?",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is register spilling?",
+                "Saving variables to memory when there are not enough registers."
+            ],
+            "guid": "s4[BmI}P0_",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How do you rewrite code for spilled variables?",
+                "Use reserved registers (e.g., %r11) to load/store from memory."
+            ],
+            "guid": "n_d$_sXz<V",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is register coalescing?",
+                "Optimization to eliminate register-to-register moves if no interference exists."
+            ],
+            "guid": "wBP4siUyr]",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is a precolored node in register allocation?",
+                "A variable assigned to a specific hardware register (e.g., %eax for return values)."
+            ],
+            "guid": "G4=sb6/E_y",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "register_allocation"
+            ]
         }
     ],
     "reviewLimit": null,
