@@ -182,7 +182,9 @@
             ],
             "guid": "NE8zC8kDHN",
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
-            "tags": []
+            "tags": [
+                "Overview"
+            ]
         },
         {
             "__type__": "Note",
@@ -224,7 +226,7 @@
             "__type__": "Note",
             "fields": [
                 "What is the maximal munch algorithm?",
-                "A top-down instruction selection approach that always tries to match the largest possible subtree pattern first, generating efficient code by greedily choosing the most specific match."
+                "The compiler searches for the <strong>largest matching subtree</strong>, not just the immediate node."
             ],
             "guid": "i~.K->DkpK",
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
@@ -248,7 +250,7 @@
             "__type__": "Note",
             "fields": [
                 "What does&nbsp;ˇe and&nbsp;ˆe mean in code generation",
-                "ˇe denotes the instruction sequence implementing expression <code>e</code>.<br><div>ˆe denotes the operand (e.g., a temp) that holds the result of evaluating expression <code>e</code>.</div>"
+                "ˇe (e check) denotes the instruction sequence implementing expression <code>e</code>.<br><div>ˆe (e hat) denotes the operand (e.g., a temp) that holds the result of evaluating expression <code>e</code>.</div>"
             ],
             "guid": "A,-CyeO.@6",
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
@@ -301,8 +303,7 @@
             "guid": "LST6Q8}UXV",
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
             "tags": [
-                "instruction_selection",
-                "optimizations"
+                "instruction_selection"
             ]
         },
         {
@@ -314,8 +315,7 @@
             "guid": "p9cc<@^Szf",
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
             "tags": [
-                "instruction_selection",
-                "optimizations"
+                "instruction_selection"
             ]
         },
         {
@@ -327,8 +327,7 @@
             "guid": "CF}8)*Y;;S",
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
             "tags": [
-                "instruction_selection",
-                "optimizations"
+                "instruction_selection"
             ]
         },
         {
@@ -644,6 +643,234 @@
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
             "tags": [
                 "register_allocation"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "When is a variable considered \"live\" in liveness analysis?",
+                "A variable is live at a program point if it may be used in the future before being overwritten."
+            ],
+            "guid": "dSzlTw(n@1",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Why is liveness analysis important in compiler design?",
+                "It's essential for register allocation. It helps determine when variables can share registers without conflict."
+            ],
+            "guid": "A6<0*#PTWz",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Is liveness analysis decidable?",
+                "No, it's undecidable in general for Turing-complete languages, but approximations (like the one presented) are used."
+            ],
+            "guid": "uH+b>3,^e8",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the difference between 'live-in' and 'live-out' in liveness analysis?",
+                "'Live-in' means variables are live at the beginning of the instruction. 'Live-out' means variables are live after the instruction."
+            ],
+            "guid": "A15@0MG&H^",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is saturation in the context of inference rules?",
+                "It means applying all inference rules until no new facts can be derived."
+            ],
+            "guid": "BG|Af-D3W{",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In the rule <code>x ← y ⊕ z</code>, which variables are live at this instruction?",
+                "<div>y and z (used), and any variables live in the next instruction except x.</div>"
+            ],
+            "guid": "I8q:!8ppZ;",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the inference rule L1 and L2?",
+                "If <code>x ← y ⊕ z</code> occurs at line l, then <code>live(l, y)</code> and <code>live(l, z)</code>.<br>If <code>x ← y ⊕ z</code> at line l and <code>u</code> is live at <code>l+1</code> and <code>u ≠ x</code>, then <code>u</code> is live at <code>l</code>."
+            ],
+            "guid": "C=Dw^f!P[W",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In <code>return x</code>, which variable is live?",
+                "Only x."
+            ],
+            "guid": "b#UEKhZ@vi",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does <code>goto l'</code> affect liveness?",
+                "Any variable live at <code>l'</code> is also live at the <code>goto</code> line."
+            ],
+            "guid": "v>f^0X]EXF",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What variables are live at a conditional <code>if (x ∼ c) goto l'</code>?",
+                "x is live; any variable live at <code>l+1</code> or at <code>l'</code> is also live at the current line."
+            ],
+            "guid": "cKKT?&Zdvb",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What's the significance of refactoring rules with <code>use</code>, <code>def</code>, and <code>succ</code> predicates?",
+                "It abstracts repetitive inference patterns and simplifies rule structure."
+            ],
+            "guid": "LC6:d#}F^F",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What are rule K1 and K2?",
+                "K1: If <code>use(l, x)</code> then <code>live(l, x)</code>.<br>K2: If <code>u</code> is live at successor <code>l'</code>, and <code>u</code> is not defined at line <code>l</code>, then <code>u</code> is live at <code>l</code>."
+            ],
+            "guid": "w(<8L[}pgP",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In a straight-line program, why is backward propagation precise for liveness?",
+                "Because there's only one control flow path; no need to consider multiple branches or loops."
+            ],
+            "guid": "nrqmac~5W$",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In loops, why do we need multiple passes to compute liveness?",
+                "Because of backward jumps; liveness can propagate back only after knowing what’s live in the loop body."
+            ],
+            "guid": "su}mYfO9Kw",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How can z interfere with other variables even if it's dead code?",
+                "If z is assigned but unused, it still interferes with other variables live on the same line due to register allocation."
+            ],
+            "guid": "PP/6^3xh+r",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What's the difference between liveness and neededness?",
+                "Liveness tracks future use; neededness tracks whether a value affects program output. Neededness is used in dead code elimination."
+            ],
+            "guid": "dL8:@XOOkw",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Given the instruction <code>x ← y + z</code> at line 5, and <code>live(6, x)</code>, is x live at line 5? Why or why not?",
+                "No, because x is being overwritten at line 5."
+            ],
+            "guid": "DjOb%SD`i.",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Write out the inference rules needed to determine liveness for a conditional jump.",
+                "L6, L7, and L8. L6 adds x as live, L7 and L8 propagate live vars from both successors (l+1 and l')."
+            ],
+            "guid": "Hi:i?^wPa.",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In a program with loops, how do you know when liveness saturation is complete?",
+                "When applying the inference rules no longer produces any new <code>live(l,x)</code> facts."
+            ],
+            "guid": "nY|Dr9{P-P",
+            "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
+            "tags": [
+                "liveness_analysis"
             ]
         }
     ],
