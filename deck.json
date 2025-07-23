@@ -212,7 +212,7 @@
             "__type__": "Note",
             "fields": [
                 "What kind of statements and expressions can IR trees contain?",
-                "Assignments and return statements; expressions can include constants, temps (variables), and binary operations like <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>."
+                "Assignments and return statements; expressions can include constants, temps (variables), and binary operations like <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>.<br><strong><br>Expressions</strong> are recursive: their code is generated <strong>bottom-up</strong>, combining sub-expressions.<br><br><b>Statements</b> are top-down: they <em>use</em> expressions and translate into instructions with side-effects (like storing results or jumping)."
             ],
             "guid": "D,33}129DU",
             "note_model_uuid": "7b60bb6f-65a9-11f0-9668-2cf05d74b1f3",
